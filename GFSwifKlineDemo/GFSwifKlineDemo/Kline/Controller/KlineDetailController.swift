@@ -8,7 +8,7 @@
 
 import UIKit
 import Foundation
-
+import SwiftyJSON
 import Alamofire
 
 
@@ -22,6 +22,7 @@ class KlineDetailController: UIViewController {
     }
     
     func setupUI() -> Void {
+        
         self.view.backgroundColor = UIColor.init(hex: "2A2D4F")
         GFKlineCaculateDataManager.sharedInstance().interfaceOrientation = .portrait;
         self.stockChartView.backgroundColor = UIColor.init(hex:"2A2D4F")
@@ -36,10 +37,10 @@ class KlineDetailController: UIViewController {
     }
     
     //请求数据
-    func loadData(titleModel:GFKlineAndTimeSharetitleModel) -> Void {
+    func loadData(titleModel:GFKlineAndTimeSharetitleModel) {
         
     }
-    
+
     //返回Event
     @objc func backToRoot()->Void {
         self.dismiss(animated: true, completion: nil)

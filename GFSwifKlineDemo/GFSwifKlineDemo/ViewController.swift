@@ -19,6 +19,10 @@ class ViewController: UIViewController {
         setupUI()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
+    
     func setupUI() -> Void {
         self.view.backgroundColor = UIColor.orange
         self.view.addSubview(self.centerButton)

@@ -9,10 +9,6 @@
 import UIKit
 
 class GFKlineConfigParameters: NSObject {
-    struct xxx {
-        
-    }
-    
-    
+      
     
 }
