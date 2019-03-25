@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,14 @@
 		8482C8BF224869B90096C5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482C8BD224869B90096C5D2 /* Main.storyboard */; };
 		8482C8C1224869BA0096C5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8482C8C0224869BA0096C5D2 /* Assets.xcassets */; };
 		8482C8C4224869BA0096C5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482C8C2224869BA0096C5D2 /* LaunchScreen.storyboard */; };
+		8482C8CE224877C80096C5D2 /* GFGlobalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8CD224877C80096C5D2 /* GFGlobalHeader.swift */; };
+		8482C8D522487F9A0096C5D2 /* KlineDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8D222487F9A0096C5D2 /* KlineDetailController.swift */; };
+		8482C8D8224882D10096C5D2 /* UILabelFixedWidthAndHeightExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8D7224882D10096C5D2 /* UILabelFixedWidthAndHeightExtension.swift */; };
+		8482C8DA224886400096C5D2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8D9224886400096C5D2 /* UIColorExtension.swift */; };
+		8482C8DC22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8DB22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift */; };
+		8482C8DE2248A7960096C5D2 /* GFKlineConfigParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8DD2248A7950096C5D2 /* GFKlineConfigParameters.swift */; };
+		8482C8E02248B1940096C5D2 /* GFKlineChartBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8DF2248B1940096C5D2 /* GFKlineChartBottomView.swift */; };
+		8482C8E22248B4A40096C5D2 /* GFKlineAndTimeSharetitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8E12248B4A40096C5D2 /* GFKlineAndTimeSharetitleModel.swift */; };
 		D47D9D8222CEE11F9BAEF1EC /* Pods_GFSwifKlineDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545DD9D2EF48CB8466C30CF9 /* Pods_GFSwifKlineDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +33,14 @@
 		8482C8C0224869BA0096C5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8482C8C3224869BA0096C5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8482C8C5224869BA0096C5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8482C8CD224877C80096C5D2 /* GFGlobalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFGlobalHeader.swift; sourceTree = "<group>"; };
+		8482C8D222487F9A0096C5D2 /* KlineDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KlineDetailController.swift; sourceTree = "<group>"; };
+		8482C8D7224882D10096C5D2 /* UILabelFixedWidthAndHeightExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelFixedWidthAndHeightExtension.swift; sourceTree = "<group>"; };
+		8482C8D9224886400096C5D2 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		8482C8DB22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineCaculateDataManager.swift; sourceTree = "<group>"; };
+		8482C8DD2248A7950096C5D2 /* GFKlineConfigParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineConfigParameters.swift; sourceTree = "<group>"; };
+		8482C8DF2248B1940096C5D2 /* GFKlineChartBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineChartBottomView.swift; sourceTree = "<group>"; };
+		8482C8E12248B4A40096C5D2 /* GFKlineAndTimeSharetitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineAndTimeSharetitleModel.swift; sourceTree = "<group>"; };
 		8C1372F52B10FE0BC5F930BF /* Pods-GFSwifKlineDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFSwifKlineDemo.release.xcconfig"; path = "Target Support Files/Pods-GFSwifKlineDemo/Pods-GFSwifKlineDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -46,7 +62,6 @@
 				17751EABD45E9D24A3D93BFB /* Pods-GFSwifKlineDemo.debug.xcconfig */,
 				8C1372F52B10FE0BC5F930BF /* Pods-GFSwifKlineDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -71,14 +86,70 @@
 		8482C8B8224869B90096C5D2 /* GFSwifKlineDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8482C8CF22487F9A0096C5D2 /* Kline */,
 				8482C8B9224869B90096C5D2 /* AppDelegate.swift */,
 				8482C8BB224869B90096C5D2 /* ViewController.swift */,
+				8482C8CD224877C80096C5D2 /* GFGlobalHeader.swift */,
+				8482C8DD2248A7950096C5D2 /* GFKlineConfigParameters.swift */,
 				8482C8BD224869B90096C5D2 /* Main.storyboard */,
 				8482C8C0224869BA0096C5D2 /* Assets.xcassets */,
 				8482C8C2224869BA0096C5D2 /* LaunchScreen.storyboard */,
 				8482C8C5224869BA0096C5D2 /* Info.plist */,
 			);
 			path = GFSwifKlineDemo;
+			sourceTree = "<group>";
+		};
+		8482C8CF22487F9A0096C5D2 /* Kline */ = {
+			isa = PBXGroup;
+			children = (
+				8482C8D6224882460096C5D2 /* CategoryTool */,
+				8482C8D122487F9A0096C5D2 /* Controller */,
+				8482C8D422487F9A0096C5D2 /* View */,
+				8482C8D022487F9A0096C5D2 /* ViewModel */,
+				8482C8D322487F9A0096C5D2 /* Model */,
+			);
+			path = Kline;
+			sourceTree = "<group>";
+		};
+		8482C8D022487F9A0096C5D2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8482C8D122487F9A0096C5D2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8482C8D222487F9A0096C5D2 /* KlineDetailController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8482C8D322487F9A0096C5D2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8482C8DB22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift */,
+				8482C8E12248B4A40096C5D2 /* GFKlineAndTimeSharetitleModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8482C8D422487F9A0096C5D2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8482C8DF2248B1940096C5D2 /* GFKlineChartBottomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8482C8D6224882460096C5D2 /* CategoryTool */ = {
+			isa = PBXGroup;
+			children = (
+				8482C8D7224882D10096C5D2 /* UILabelFixedWidthAndHeightExtension.swift */,
+				8482C8D9224886400096C5D2 /* UIColorExtension.swift */,
+			);
+			path = CategoryTool;
 			sourceTree = "<group>";
 		};
 		AE540260A6EB2FF39599FF9F /* Frameworks */ = {
@@ -117,6 +188,7 @@
 		8482C8AE224869B90096C5D2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = GFKline;
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = Admin;
@@ -204,8 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8482C8D8224882D10096C5D2 /* UILabelFixedWidthAndHeightExtension.swift in Sources */,
+				8482C8D522487F9A0096C5D2 /* KlineDetailController.swift in Sources */,
+				8482C8DE2248A7960096C5D2 /* GFKlineConfigParameters.swift in Sources */,
+				8482C8DC22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift in Sources */,
+				8482C8E02248B1940096C5D2 /* GFKlineChartBottomView.swift in Sources */,
 				8482C8BC224869B90096C5D2 /* ViewController.swift in Sources */,
+				8482C8E22248B4A40096C5D2 /* GFKlineAndTimeSharetitleModel.swift in Sources */,
+				8482C8CE224877C80096C5D2 /* GFGlobalHeader.swift in Sources */,
 				8482C8BA224869B90096C5D2 /* AppDelegate.swift in Sources */,
+				8482C8DA224886400096C5D2 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,7 +433,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2672TY37HZ;
 				INFOPLIST_FILE = GFSwifKlineDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -371,7 +453,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2672TY37HZ;
 				INFOPLIST_FILE = GFSwifKlineDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
