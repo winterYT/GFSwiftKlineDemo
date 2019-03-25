@@ -12,9 +12,12 @@
 		8482C8BF224869B90096C5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482C8BD224869B90096C5D2 /* Main.storyboard */; };
 		8482C8C1224869BA0096C5D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8482C8C0224869BA0096C5D2 /* Assets.xcassets */; };
 		8482C8C4224869BA0096C5D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482C8C2224869BA0096C5D2 /* LaunchScreen.storyboard */; };
+		D47D9D8222CEE11F9BAEF1EC /* Pods_GFSwifKlineDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 545DD9D2EF48CB8466C30CF9 /* Pods_GFSwifKlineDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17751EABD45E9D24A3D93BFB /* Pods-GFSwifKlineDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFSwifKlineDemo.debug.xcconfig"; path = "Target Support Files/Pods-GFSwifKlineDemo/Pods-GFSwifKlineDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		545DD9D2EF48CB8466C30CF9 /* Pods_GFSwifKlineDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GFSwifKlineDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482C8B6224869B90096C5D2 /* GFSwifKlineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFSwifKlineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482C8B9224869B90096C5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8482C8BB224869B90096C5D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		8482C8C0224869BA0096C5D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8482C8C3224869BA0096C5D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8482C8C5224869BA0096C5D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8C1372F52B10FE0BC5F930BF /* Pods-GFSwifKlineDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GFSwifKlineDemo.release.xcconfig"; path = "Target Support Files/Pods-GFSwifKlineDemo/Pods-GFSwifKlineDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D47D9D8222CEE11F9BAEF1EC /* Pods_GFSwifKlineDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3AF088752250AB396F33530A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17751EABD45E9D24A3D93BFB /* Pods-GFSwifKlineDemo.debug.xcconfig */,
+				8C1372F52B10FE0BC5F930BF /* Pods-GFSwifKlineDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8482C8AD224869B90096C5D2 = {
 			isa = PBXGroup;
 			children = (
 				8482C8B8224869B90096C5D2 /* GFSwifKlineDemo */,
 				8482C8B7224869B90096C5D2 /* Products */,
+				3AF088752250AB396F33530A /* Pods */,
+				AE540260A6EB2FF39599FF9F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +81,14 @@
 			path = GFSwifKlineDemo;
 			sourceTree = "<group>";
 		};
+		AE540260A6EB2FF39599FF9F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				545DD9D2EF48CB8466C30CF9 /* Pods_GFSwifKlineDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8482C8C8224869BA0096C5D2 /* Build configuration list for PBXNativeTarget "GFSwifKlineDemo" */;
 			buildPhases = (
+				8C1974C19EBACC35E4E4BBD7 /* [CP] Check Pods Manifest.lock */,
 				8482C8B2224869B90096C5D2 /* Sources */,
 				8482C8B3224869B90096C5D2 /* Frameworks */,
 				8482C8B4224869B90096C5D2 /* Resources */,
+				225B82AE3D2F7093B80FDEA5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		225B82AE3D2F7093B80FDEA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GFSwifKlineDemo/Pods-GFSwifKlineDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GFSwifKlineDemo/Pods-GFSwifKlineDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GFSwifKlineDemo/Pods-GFSwifKlineDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C1974C19EBACC35E4E4BBD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GFSwifKlineDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8482C8B2224869B90096C5D2 /* Sources */ = {
@@ -280,6 +349,7 @@
 		};
 		8482C8C9224869BA0096C5D2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17751EABD45E9D24A3D93BFB /* Pods-GFSwifKlineDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +367,7 @@
 		};
 		8482C8CA224869BA0096C5D2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C1372F52B10FE0BC5F930BF /* Pods-GFSwifKlineDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
