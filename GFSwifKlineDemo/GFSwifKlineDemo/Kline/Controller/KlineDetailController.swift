@@ -18,7 +18,9 @@ class KlineDetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        loadData(titleModel: GFKlineAndTimeSharetitleModel())
+        let titleModel:GFKlineAndTimeSharetitleModel = GFKlineAndTimeSharetitleModel()
+        titleModel.mkCode = "1min"
+        loadData(titleModel: titleModel)
     }
     
     func setupUI() -> Void {
@@ -38,7 +40,23 @@ class KlineDetailController: UIViewController {
     
     //请求数据
     func loadData(titleModel:GFKlineAndTimeSharetitleModel) {
-        
+        let dic:Parameters = ["contract":"CULink3","dataType":titleModel.mkCode!];
+        self.klineViewModel.requestKlineData(type: .GET, url: GFKlineApiService.klineDataApi(), parameters: dic, successVMCallBack: { (responsObject) in
+            let dataArray:Array = responsObject["data"].arrayValue
+            var klineArray:Array<GFKlineModel> = Array<GFKlineModel>()
+            if klineArray.count == 0 {
+                return;
+            }
+            for i in 0 ..< dataArray.count {
+                let modelJson = dataArray[i]
+                let klineModel = GFKlineModel(jsonData: modelJson)
+                klineArray.append(klineModel)
+            }
+            self.stockChartView.setKlineModelsArray(klineModels: klineArray)
+            
+        }) { (error) in
+            print(error)
+        }
     }
 
     //返回Event
@@ -61,6 +79,11 @@ class KlineDetailController: UIViewController {
             make.edges.equalTo(self.view);
         })
         return chartView
+    }()
+    
+    lazy var klineViewModel = {()->GFKlineViewModel in
+        let viewModel = GFKlineViewModel()
+        return viewModel
     }()
     
 

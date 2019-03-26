@@ -10,6 +10,21 @@
 		8477CAB22248CBF100F454F5 /* GFKlineNetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAB12248CBF100F454F5 /* GFKlineNetworkTools.swift */; };
 		8477CAB32248E49500F454F5 /* GFKlineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAAE2248CA4600F454F5 /* GFKlineViewModel.swift */; };
 		8477CAB52248E4EE00F454F5 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8477CAB42248E4EE00F454F5 /* ObjcExceptionBridging.framework */; };
+		8477CAB92249B3D200F454F5 /* GFKlineApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAB82249B3D200F454F5 /* GFKlineApiService.swift */; };
+		8477CABD2249C55F00F454F5 /* GFKlineCaculateDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8DB22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift */; };
+		8477CABE2249C56E00F454F5 /* GFKlineModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CABA2249B96300F454F5 /* GFKlineModel.swift */; };
+		8477CAC02249F26600F454F5 /* GFKlineMainKlineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CABF2249F26600F454F5 /* GFKlineMainKlineView.swift */; };
+		8477CAC22249F44A00F454F5 /* GFKlineMainGridlinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAC12249F44A00F454F5 /* GFKlineMainGridlinesView.swift */; };
+		8477CAC42249F54600F454F5 /* GFKlineAccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAC32249F54600F454F5 /* GFKlineAccessView.swift */; };
+		8477CAC62249F5D100F454F5 /* GFKlineAccessGridlinesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAC52249F5D100F454F5 /* GFKlineAccessGridlinesView.swift */; };
+		8477CAC82249F66600F454F5 /* GFKlineMainInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAC72249F66600F454F5 /* GFKlineMainInfoView.swift */; };
+		8477CACA2249F6DB00F454F5 /* GFKlineAccessInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAC92249F6DB00F454F5 /* GFKlineAccessInfoView.swift */; };
+		8477CACC2249F73700F454F5 /* GFKlineLongPressBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CACB2249F73700F454F5 /* GFKlineLongPressBottomView.swift */; };
+		8477CACE2249F83D00F454F5 /* GFKlineDateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CACD2249F83D00F454F5 /* GFKlineDateView.swift */; };
+		8477CAD02249F94F00F454F5 /* GFKlineMainLeftDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CACF2249F94F00F454F5 /* GFKlineMainLeftDataView.swift */; };
+		8477CAD22249F96000F454F5 /* GFKlineAccessLeftDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAD12249F96000F454F5 /* GFKlineAccessLeftDataView.swift */; };
+		8477CAD42249F97700F454F5 /* GFKlineAccessRightDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAD32249F97700F454F5 /* GFKlineAccessRightDataView.swift */; };
+		8477CAD62249FCCB00F454F5 /* GFKlineTabDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8477CAD52249FCCB00F454F5 /* GFKlineTabDataView.swift */; };
 		8482C8BA224869B90096C5D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8B9224869B90096C5D2 /* AppDelegate.swift */; };
 		8482C8BC224869B90096C5D2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8BB224869B90096C5D2 /* ViewController.swift */; };
 		8482C8BF224869B90096C5D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8482C8BD224869B90096C5D2 /* Main.storyboard */; };
@@ -19,7 +34,6 @@
 		8482C8D522487F9A0096C5D2 /* KlineDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8D222487F9A0096C5D2 /* KlineDetailController.swift */; };
 		8482C8D8224882D10096C5D2 /* UILabelFixedWidthAndHeightExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8D7224882D10096C5D2 /* UILabelFixedWidthAndHeightExtension.swift */; };
 		8482C8DA224886400096C5D2 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8D9224886400096C5D2 /* UIColorExtension.swift */; };
-		8482C8DC22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8DB22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift */; };
 		8482C8DE2248A7960096C5D2 /* GFKlineConfigParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8DD2248A7950096C5D2 /* GFKlineConfigParameters.swift */; };
 		8482C8E02248B1940096C5D2 /* GFKlineChartBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8DF2248B1940096C5D2 /* GFKlineChartBottomView.swift */; };
 		8482C8E22248B4A40096C5D2 /* GFKlineAndTimeSharetitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8482C8E12248B4A40096C5D2 /* GFKlineAndTimeSharetitleModel.swift */; };
@@ -56,6 +70,20 @@
 		8477CAAE2248CA4600F454F5 /* GFKlineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineViewModel.swift; sourceTree = "<group>"; };
 		8477CAB12248CBF100F454F5 /* GFKlineNetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineNetworkTools.swift; sourceTree = "<group>"; };
 		8477CAB42248E4EE00F454F5 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ObjcExceptionBridging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8477CAB82249B3D200F454F5 /* GFKlineApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineApiService.swift; sourceTree = "<group>"; };
+		8477CABA2249B96300F454F5 /* GFKlineModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineModel.swift; sourceTree = "<group>"; };
+		8477CABF2249F26600F454F5 /* GFKlineMainKlineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineMainKlineView.swift; sourceTree = "<group>"; };
+		8477CAC12249F44A00F454F5 /* GFKlineMainGridlinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineMainGridlinesView.swift; sourceTree = "<group>"; };
+		8477CAC32249F54600F454F5 /* GFKlineAccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineAccessView.swift; sourceTree = "<group>"; };
+		8477CAC52249F5D100F454F5 /* GFKlineAccessGridlinesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineAccessGridlinesView.swift; sourceTree = "<group>"; };
+		8477CAC72249F66600F454F5 /* GFKlineMainInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineMainInfoView.swift; sourceTree = "<group>"; };
+		8477CAC92249F6DB00F454F5 /* GFKlineAccessInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineAccessInfoView.swift; sourceTree = "<group>"; };
+		8477CACB2249F73700F454F5 /* GFKlineLongPressBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineLongPressBottomView.swift; sourceTree = "<group>"; };
+		8477CACD2249F83D00F454F5 /* GFKlineDateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineDateView.swift; sourceTree = "<group>"; };
+		8477CACF2249F94F00F454F5 /* GFKlineMainLeftDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineMainLeftDataView.swift; sourceTree = "<group>"; };
+		8477CAD12249F96000F454F5 /* GFKlineAccessLeftDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineAccessLeftDataView.swift; sourceTree = "<group>"; };
+		8477CAD32249F97700F454F5 /* GFKlineAccessRightDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineAccessRightDataView.swift; sourceTree = "<group>"; };
+		8477CAD52249FCCB00F454F5 /* GFKlineTabDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFKlineTabDataView.swift; sourceTree = "<group>"; };
 		8482C8B6224869B90096C5D2 /* GFSwifKlineDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GFSwifKlineDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8482C8B9224869B90096C5D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8482C8BB224869B90096C5D2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +167,14 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		8477CAB72249B39500F454F5 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				8477CAB82249B3D200F454F5 /* GFKlineApiService.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
 		8482C8AD224869B90096C5D2 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +212,7 @@
 		8482C8CF22487F9A0096C5D2 /* Kline */ = {
 			isa = PBXGroup;
 			children = (
+				8477CAB72249B39500F454F5 /* Api */,
 				8477CAB02248CBBE00F454F5 /* Tools */,
 				8482C8D6224882460096C5D2 /* CategoryTool */,
 				8482C8D122487F9A0096C5D2 /* Controller */,
@@ -207,6 +244,7 @@
 			children = (
 				8482C8DB22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift */,
 				8482C8E12248B4A40096C5D2 /* GFKlineAndTimeSharetitleModel.swift */,
+				8477CABA2249B96300F454F5 /* GFKlineModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -215,6 +253,18 @@
 			isa = PBXGroup;
 			children = (
 				8482C8DF2248B1940096C5D2 /* GFKlineChartBottomView.swift */,
+				8477CABF2249F26600F454F5 /* GFKlineMainKlineView.swift */,
+				8477CAC32249F54600F454F5 /* GFKlineAccessView.swift */,
+				8477CAC12249F44A00F454F5 /* GFKlineMainGridlinesView.swift */,
+				8477CAC52249F5D100F454F5 /* GFKlineAccessGridlinesView.swift */,
+				8477CAC72249F66600F454F5 /* GFKlineMainInfoView.swift */,
+				8477CAC92249F6DB00F454F5 /* GFKlineAccessInfoView.swift */,
+				8477CACB2249F73700F454F5 /* GFKlineLongPressBottomView.swift */,
+				8477CACD2249F83D00F454F5 /* GFKlineDateView.swift */,
+				8477CACF2249F94F00F454F5 /* GFKlineMainLeftDataView.swift */,
+				8477CAD12249F96000F454F5 /* GFKlineAccessLeftDataView.swift */,
+				8477CAD32249F97700F454F5 /* GFKlineAccessRightDataView.swift */,
+				8477CAD52249FCCB00F454F5 /* GFKlineTabDataView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -359,18 +409,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8477CABE2249C56E00F454F5 /* GFKlineModel.swift in Sources */,
+				8477CAC42249F54600F454F5 /* GFKlineAccessView.swift in Sources */,
+				8477CABD2249C55F00F454F5 /* GFKlineCaculateDataManager.swift in Sources */,
 				8477CAB32248E49500F454F5 /* GFKlineViewModel.swift in Sources */,
 				8482C8D8224882D10096C5D2 /* UILabelFixedWidthAndHeightExtension.swift in Sources */,
 				8482C8D522487F9A0096C5D2 /* KlineDetailController.swift in Sources */,
 				8482C8DE2248A7960096C5D2 /* GFKlineConfigParameters.swift in Sources */,
+				8477CAB92249B3D200F454F5 /* GFKlineApiService.swift in Sources */,
+				8477CAD42249F97700F454F5 /* GFKlineAccessRightDataView.swift in Sources */,
 				8477CAB22248CBF100F454F5 /* GFKlineNetworkTools.swift in Sources */,
-				8482C8DC22489FFF0096C5D2 /* GFKlineCaculateDataManager.swift in Sources */,
 				8482C8E02248B1940096C5D2 /* GFKlineChartBottomView.swift in Sources */,
 				8482C8BC224869B90096C5D2 /* ViewController.swift in Sources */,
+				8477CAC22249F44A00F454F5 /* GFKlineMainGridlinesView.swift in Sources */,
 				8482C8E22248B4A40096C5D2 /* GFKlineAndTimeSharetitleModel.swift in Sources */,
+				8477CACE2249F83D00F454F5 /* GFKlineDateView.swift in Sources */,
+				8477CAD02249F94F00F454F5 /* GFKlineMainLeftDataView.swift in Sources */,
+				8477CACC2249F73700F454F5 /* GFKlineLongPressBottomView.swift in Sources */,
+				8477CAC02249F26600F454F5 /* GFKlineMainKlineView.swift in Sources */,
+				8477CAC62249F5D100F454F5 /* GFKlineAccessGridlinesView.swift in Sources */,
 				8482C8CE224877C80096C5D2 /* GFGlobalHeader.swift in Sources */,
 				8482C8BA224869B90096C5D2 /* AppDelegate.swift in Sources */,
+				8477CAD62249FCCB00F454F5 /* GFKlineTabDataView.swift in Sources */,
+				8477CAD22249F96000F454F5 /* GFKlineAccessLeftDataView.swift in Sources */,
+				8477CAC82249F66600F454F5 /* GFKlineMainInfoView.swift in Sources */,
 				8482C8DA224886400096C5D2 /* UIColorExtension.swift in Sources */,
+				8477CACA2249F6DB00F454F5 /* GFKlineAccessInfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
