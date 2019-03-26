@@ -9,7 +9,9 @@
 import UIKit
 import SwiftyJSON
 
-struct GFKlineModel {
+
+
+struct GFKlineModel:Equatable {
     var lowest:String?
     var source:String?
     var contract: String?
@@ -49,7 +51,9 @@ struct GFKlineModel {
     var DEA: Float = 0
     var MACD: Float = 0
     //    var PreviousKlineModel:GFKlineModel?
-
+    static func == (lhs: GFKlineModel, rhs: GFKlineModel) -> Bool {
+        return lhs.ruleAt == rhs.ruleAt
+    }
     init(jsonData: JSON) {
         source = jsonData["source"].stringValue
         lowest = jsonData["lowest"].stringValue
@@ -74,5 +78,6 @@ struct GFKlineModel {
         
         
     }
+    
     
  }

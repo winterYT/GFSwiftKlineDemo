@@ -44,7 +44,7 @@ class KlineDetailController: UIViewController {
         self.klineViewModel.requestKlineData(type: .GET, url: GFKlineApiService.klineDataApi(), parameters: dic, successVMCallBack: { (responsObject) in
             let dataArray:Array = responsObject["data"].arrayValue
             var klineArray:Array<GFKlineModel> = Array<GFKlineModel>()
-            if klineArray.count == 0 {
+            if dataArray.count == 0 {
                 return;
             }
             for i in 0 ..< dataArray.count {
@@ -76,7 +76,8 @@ class KlineDetailController: UIViewController {
         let chartView = GFKlineChartBottomView()
         self.view.addSubview(chartView)
         chartView.snp.makeConstraints({ (make) in
-            make.edges.equalTo(self.view);
+            
+        make.edges.equalTo(self.view);
         })
         return chartView
     }()

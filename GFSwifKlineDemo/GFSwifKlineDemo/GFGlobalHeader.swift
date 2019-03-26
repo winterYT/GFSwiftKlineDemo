@@ -11,6 +11,8 @@ let defaults = UserDefaults.standard
 //屏幕的宽高
 let kScreenWidth = UIScreen.main.bounds.size.width
 let kScreenHeight = UIScreen.main.bounds.size.height
+let SCREEN_MIN = min(kScreenWidth,kScreenHeight)
+let SCREEN_MAX = max(kScreenHeight,kScreenWidth)
 // 判断系统版本
 func kIS_IOS7() ->Bool { return (UIDevice.current.systemVersion as NSString).doubleValue >= 7.0 }
 func kIS_IOS8() -> Bool { return (UIDevice.current.systemVersion as NSString).doubleValue >= 8.0 }

@@ -16,7 +16,8 @@ class GFKlineChartBottomView: UIView,UIScrollViewDelegate {
     var kLineVolumeViewHeightConstraint:Constraint?
     var CJLViewTapType:NSInteger = 0
     var mainViewType:NSInteger = 1
-    var kLineModels:Array<GFKlineModel> = Array<GFKlineModel>()
+    var lastModel:GFKlineModel?
+    
     override init(frame: CGRect) {
         //子类初始化的一些操作需要放到super.init之前
         super.init(frame: frame)
@@ -30,14 +31,33 @@ class GFKlineChartBottomView: UIView,UIScrollViewDelegate {
     }
     
     func setKlineModelsArray(klineModels:Array<GFKlineModel>) -> Void {
+        if (self.kLineModels.last != klineModels.last) {
+            removeClearViewFromSuperView()
+        }
         self.kLineModels = klineModels
+        if GFKlineCaculateDataManager.sharedInstance().interfaceOrientation == .portrait {
+            self.scrollView.frame.size.height = SCREEN_MAX - UIDevice.current.navigationBarHeight()  - UIDevice.current.bottomSafeHeight()
+            self.scrollView.frame.size.width = SCREEN_MIN
+            self.kLineMainGridlineView.superHeight = self.scrollView.frame.height
+            self.kLineMainGridlineView.setupGridlineFunction()
+        }else {
+            self.scrollView.frame.size.height = SCREEN_MIN - 40 - UIDevice.current.bottomSafeHeight()
+            self.scrollView.frame.size.width = SCREEN_MAX - 140  - UIDevice.current.statusBarHeight()
+        }
         
+    }
+    
+    func removeClearViewFromSuperView() -> Void {
+        self.clearView.removeFromSuperview()
+        self.scrollView.isScrollEnabled = true
     }
     
     func setupUI() -> Void {
     self.addSubview(self.scrollView)
     self.scrollView.snp.makeConstraints { (make) in
-        make.top.right.left.bottom.equalTo(self);
+        make.height.equalTo(SCREEN_MAX - UIDevice.current.navigationBarHeight()  - UIDevice.current.bottomSafeHeight())
+        make.top.equalTo(UIDevice.current.navigationBarHeight())
+        make.right.left.bottom.equalTo(self);
     }
     self.scrollView.addSubview(self.kLineMainView)
     self.kLineMainView.snp.makeConstraints { (make) in
@@ -105,7 +125,13 @@ class GFKlineChartBottomView: UIView,UIScrollViewDelegate {
             make.top.bottom.equalTo(self.kLineVolumeView);
             make.left.right.equalTo(self);
         }
-        
+        self.clearView.backgroundColor = UIColor.clear
+        self.dateView.backgroundColor = UIColor.clear
+        self.leftPriceView.backgroundColor = UIColor.clear
+        self.volumeLeftView.backgroundColor = UIColor.clear
+        self.volumeRightView.backgroundColor = UIColor.clear
+        self.kLineMainGridlineView.backgroundColor = UIColor.clear
+        self.kLineVolumeGridlinesView.backgroundColor = UIColor.clear
     }
     
     
@@ -162,7 +188,7 @@ class GFKlineChartBottomView: UIView,UIScrollViewDelegate {
         return accInfoView
     }()
     
-    lazy var clearView = {()->GFKlineLongPressBottomView in
+    lazy var clearView:GFKlineLongPressBottomView = {()->GFKlineLongPressBottomView in
         let celarView = GFKlineLongPressBottomView()
         return celarView
     }()
@@ -191,6 +217,13 @@ class GFKlineChartBottomView: UIView,UIScrollViewDelegate {
         let leftAndRight = GFKlineTabDataView()
         return leftAndRight
     }()
+    
+    lazy var kLineModels = {()-> Array<GFKlineModel> in
+        let models = Array<GFKlineModel>()
+        return models
+    }()
+    
+    
     
     //#mark-- GestureRecognizer Event
     
